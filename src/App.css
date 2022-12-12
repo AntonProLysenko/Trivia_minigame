@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+  height: 80vh;
+  width:60vw;
+
+  padding:20px;
+
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+  font-family: 'Unbounded', cursive;
+  color:beige;
+
+  overflow: scroll;
+  border-radius: 10px;
+  background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+
+  
+  background-color: #2e3a53;
+}
+
+.App::-webkit-scrollbar {
+  width: 0.5em;
+ 
+}
+ 
+.App::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+ 
+.App::-webkit-scrollbar-thumb {
+  background-color: rgb(247, 247, 247);
+  /* outline: 1px solid slategrey; */
+  border-radius: 10px;
+}
+
+button{
+    margin:5px;
+    border:none;
+    border-radius: 5px;
+    width: 30%;
+    height: 8%;
+
+    font-family: 'Unbounded', cursive;
+    color:whitesmoke;
+    background-color: rgb(58, 109, 118);
+
+
+
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+    height: 44px;
+    line-height: 44px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+
+    z-index: 9;
+    border: 0;
+}
+
+
+button:hover {
+  background: #00bd68;
+}
+    
+ul {
+  list-style-type: none;
+}
+
+.question{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 10px;
+  margin-top:10px
+}
+
+
+.title{
+  color:yellow;
+}
+
+.singleGame{
+  margin-top: 25%;
+}
+
+
+
+
+
+.increase{
+  background-color: greenyellow;
+  color:#54575e
+}
+.increase:hover{
+  background-color: rgb(0, 237, 63);
+}
+
+
+
+.decrease{
+  background-color: rgb(238, 112, 112);
+}
+.decrease:hover{
+  background-color: rgb(234, 24, 24);
+}
+
+
+.reset{
+  background-color:rgb(247, 247, 104);
+  color:#324161
+}
+.reset:hover{
+  background-color:rgb(221, 221, 21);
+}
