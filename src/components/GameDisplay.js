@@ -1,7 +1,7 @@
 import AnswerDisplay from "./AnswerDisplay"
 import Score from './Score';
 
-export default function GameDisplay ({question}){
+export default function GameDisplay ({question, score ,handleIncrement, handleDecrement, handleReset}){
 
     // const loaded = () =>{
     // return(
@@ -29,7 +29,7 @@ export default function GameDisplay ({question}){
             {question&&
             
                     <div className = "singleGame">  
-                        <Score value = {question[0].value}/>
+                        <Score score = {score} value = {question[0].value} handleIncrement = {handleIncrement} handleDecrement = {handleDecrement} handleReset = {handleReset}/>
                         <p><span className='title'>Question:</span> {question[0].question}</p>
                         <p><span className='title'>Category:</span> {question[0].category.title}</p>
                         <p><span className='title'>Points: </span>{question[0].value}</p>

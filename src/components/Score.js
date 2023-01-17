@@ -1,23 +1,4 @@
-import { useState } from "react";
-
-
-
-
-export default function Score ({value}){
-    // console.log(value)
-    const [score,setScore] = useState(0)
-
-    const handleIncrement=()=>{
-            setScore(score + value)
-    }
-
-    const handleDecrement=()=>{
-        setScore(score - value)
-    }
-
-    const handleReset=()=>{
-        setScore(score - score)
-    }
+export default function Score ({score, handleIncrement, handleDecrement, handleReset}){
 
     return(
         <>
